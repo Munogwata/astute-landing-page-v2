@@ -1,0 +1,17 @@
+@use '../../styles/general/colors.scss' as c;
+@use '../../styles/general/fonts.scss' as f;
+
+
+.external-link {
+    text-decoration: underline;
+    color: c.$white;
+    @include f.default-labels;
+    font-weight: f.$bold;
+}
+
+.internal-link--blue {
+    @include f.small-body-bold;
+    color: c.$primary-blue;
+    text-decoration: underline;
+    text-align: center;
+}
