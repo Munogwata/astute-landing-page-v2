@@ -1,0 +1,11 @@
+@use '../../../../styles/general/index.scss' as general;
+
+.footerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: general.$green800;
+    min-height: 319px;
+
+}
