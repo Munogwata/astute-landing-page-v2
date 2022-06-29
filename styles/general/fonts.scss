@@ -25,6 +25,14 @@ $large-body-font: 18px;
 
 
 
+//logo text
+@mixin default-logo-text {
+    font-weight: $bold;
+    font-family: $ibm-plex-sans;
+    font-size: 45px;
+    list-height: 58.5px;
+}
+
 
 //links
 
