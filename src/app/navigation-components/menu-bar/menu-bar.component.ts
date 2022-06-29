@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuBarComponent implements OnInit {
 
+  open = false;
+  close = true;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleMenu() {
+    this.open = !this.open
+    this.close = !this.close
   }
 
 }
