@@ -1,5 +1,6 @@
 @use '../../styles/general/colors.scss' as c;
 @use '../../styles/general/fonts.scss' as f;
+@use "../../styles/general/breakpoints.scss" as b;
 
 
 .external-link {
@@ -79,4 +80,33 @@
     display: flex;
     flex-direction: column;
 
+}
+
+.footer-links {
+    color: c.$white;
+    text-decoration: none;
+    @include f.subheading-bold;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-top: b.$very-tiny;
+    margin-bottom: b.$very-tiny;
+
+}
+
+.footer-links:hover {
+    color: c.$nude;
+}
+
+.footer-links-CS {
+    color: c.$yellow;
+    text-decoration: none;
+    @include f.subheading-bold;
+    display: block;
+    margin-top: b.$very-tiny;
+    margin-bottom: b.$very-tiny;
+}
+
+.footer-links-CS:hover {
+    color: c.$nude;
 }

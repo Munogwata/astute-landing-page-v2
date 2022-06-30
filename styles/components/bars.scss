@@ -10,6 +10,7 @@
     align-items: center;
     text-align: center;
     color: general.$white;
+
 }
 
 .updatebar {
@@ -37,6 +38,7 @@
     color: general.$black;
     text-align: center;
     margin-top: general.$small;
+
 }
 
 
@@ -45,6 +47,7 @@
     @include general.default-body-bold;
     color: general.$primary-blue;
     text-align: center;
+
 
 }
 
@@ -102,12 +105,18 @@
         display: none;
     }
 
+    .updatebar_content {
+        width: 90%;
+
+    }
 
     .hamburger_menu-container {
         display: flex;
         flex-direction: column;
+    }
 
-
+    .fundingbar-content {
+        width: 300px;
     }
 
 
@@ -116,18 +125,46 @@
 
 
 
-@media (max-width: general.$tablet) {
+@media (max-width: general.$mobile) {
 
     .updatebar_content {
-        width: 90%;
+        width: 300px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+    }
+
+    .fundingbar-content {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        padding: general.$small;
+    }
+
+    .menu-links_container {
+        width: 300px;
 
     }
 
 
+    .update_content-copy {
+        @include general.small-body-regular;
+        color: general.$black;
+        text-align: center;
+        margin-top: general.$small;
+        margin-bottom: general.$small;
+    }
+
+
+
+    .update_heading {
+        @include general.default-body-bold;
+        color: general.$primary-blue;
+        text-align: center;
+        margin-top: general.$small;
+
+    }
 
 
 

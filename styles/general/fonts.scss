@@ -34,6 +34,13 @@ $large-body-font: 18px;
 }
 
 
+@mixin small-logo-text {
+    font-weight: $bold;
+    font-family: $ibm-plex-sans;
+    font-size: 30px;
+    list-height: 58.5px;
+}
+
 //links
 
 @mixin default-menu-links {
@@ -49,10 +56,18 @@ $large-body-font: 18px;
     list-height: 32.34px;
 }
 
-
+//subheadings
+@mixin subheading-bold {
+    font-family: $ibm-plex-sans;
+    font-weight: $semi-bold;
+    line-height: 26px;
+    font-size: 20px;
+}
 
 
 //body fonts
+
+
 @mixin default-body-bold {
     font-family: $montserrat;
     font-weight: $bold;
@@ -96,5 +111,13 @@ $large-body-font: 18px;
     font-family: $ibm-plex-sans;
     font-size: 16px;
     line-height: 20.8px;
+    font-weight: $semi-bold;
+}
+
+//tags
+
+@mixin default-tag {
+    font-family: $ibm-plex-sans;
+    font-size: 10px;
     font-weight: $semi-bold;
 }
